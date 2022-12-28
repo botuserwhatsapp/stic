@@ -13,6 +13,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const fluent_ffmpeg_1 = __importDefault(require("fluent-ffmpeg"));
+const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
+fluent_ffmpeg_1.setFfmpegPath(ffmpegPath);
 const fs_extra_1 = require("fs-extra");
 const os_1 = require("os");
 const imagesToWebp = (filename) => __awaiter(void 0, void 0, void 0, function* () {
